@@ -4,7 +4,8 @@
     --bg: #f8fafc;
     --surface: #ffffff;
     /* --accent: #1ab309; */
-    --accent: #ea1b1b;
+    /* --accent: #ea1b1b; */
+    --accent: #28a90e;
     --muted: #64748b;
     --card: linear-gradient(180deg, #ffffff, #f1f5f9);
     --radius: 16px;
@@ -65,8 +66,9 @@ header {
     top: 0;
     z-index: 60;
     height: var(--nav-height);
-    backdrop-filter: blur(6px);
+    /* backdrop-filter: blur(6px); */
     background: rgba(255, 255, 255, 0.8);
+    background-color: white;
     border-bottom: 1px solid rgba(0, 0, 0, 0.06);
     display: flex;
     align-items: center;
@@ -92,16 +94,17 @@ header {
 .logo {
     width: 44px;
     height: 44px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     display: grid;
     place-items: center;
     /* background: linear-gradient(135deg, var(--accent), #ffd6b8); */
     color: #fff;
-    font-weight: 800
+    font-weight: 800;
+    padding-right: 3.5em;
 }
 
 .logo img {
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 
 nav {
@@ -132,7 +135,7 @@ nav {
     padding: 10px 14px;
     border-radius: 10px;
     /* background: linear-gradient(90deg, var(--accent), #ff8f5b); */
-    background: linear-gradient(90deg, var(--accent), #f25e5e);
+    background: linear-gradient(90deg, var(--accent), #59e14f);
     color: #fff;
     font-weight: 700;
     border: none;
@@ -370,7 +373,7 @@ p.lead {
 }
 
 .svc-cta {
-    background: linear-gradient(90deg, var(--accent), #f25e5e);
+    background: linear-gradient(90deg, var(--accent), #59e14f);
     color: white;
     padding: 8px 12px;
     border-radius: 10px;

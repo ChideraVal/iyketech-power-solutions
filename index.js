@@ -232,7 +232,7 @@
     function openMailtoFallback(name, email, message) {
         const subject = encodeURIComponent('Service request from ' + name);
         const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\n' + message);
-        window.location.href = 'mailto:hello@iyketechpowersolutions.com?subject=' + subject + '&body=' + body;
+        window.location.href = 'mailto:sales@iyke-tech.ng?subject=' + subject + '&body=' + body;
     }
 
     async function handleFormSubmission(e, form, msgEl) {
