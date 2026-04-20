@@ -427,7 +427,7 @@
             const details = buildDetailsHtml(card);
 
             pmTitle.textContent = title;
-            pmPrice.textContent = price ? `₦${Number(parseFloat(price).toFixed(2)).toLocaleString()}` : '';
+            // pmPrice.textContent = price ? `₦${Number(parseFloat(price).toFixed(2)).toLocaleString()}` : '';
             pmImg.style.backgroundImage = img ? `url('${img}')` : '';
             pmDesc.innerHTML = '';
             pmDetails.innerHTML = details.html || '';

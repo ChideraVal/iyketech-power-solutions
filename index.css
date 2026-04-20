@@ -103,9 +103,9 @@ header {
     padding-right: 3.5em;
 }
 
-.logo img {
-    /* border-radius: 10px; */
-}
+/* .logo img {
+    border-radius: 10px;
+} */
 
 nav {
     margin-left: auto
@@ -496,7 +496,8 @@ p.lead {
 
 .products-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 12px;
     margin-top: 12px
 }
@@ -514,7 +515,8 @@ p.lead {
 
 .product-card img {
     width: 100%;
-    height: 140px;
+    /* height: 140px; */
+    height: 200px;
     object-fit: cover;
     border-radius: 8px
 }
@@ -624,7 +626,7 @@ p.lead {
 .product-modal-card .pm-body {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    /* gap: 12px; */
 }
 
 .pm-price {
