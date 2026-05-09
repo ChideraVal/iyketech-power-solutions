@@ -70,10 +70,15 @@ header {
     /* backdrop-filter: blur(6px); */
     background: rgba(255, 255, 255, 0.8);
     background-color: white;
+    background: #1e9613;
     border-bottom: 1px solid rgba(0, 0, 0, 0.06);
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.brand div:nth-of-type(2) {
+    color: white;
 }
 
 .nav-wrap {
@@ -93,20 +98,20 @@ header {
 }
 
 .logo {
-    width: 44px;
-    height: 44px;
+    /* width: 44px;
+    height: 44px; */
     /* border-radius: 10px; */
     display: grid;
     place-items: center;
     /* background: linear-gradient(135deg, var(--accent), #ffd6b8); */
     color: #fff;
     font-weight: 800;
-    padding-right: 3.5em;
+    /* padding-right: 3.5em; */
 }
 
-/* .logo img {
-    border-radius: 10px;
-} */
+.logo img {
+    border-radius: 7px;
+}
 
 nav {
     margin-left: auto
@@ -120,6 +125,7 @@ nav {
 
 .nav-links a {
     color: var(--muted);
+    color: white;
     text-decoration: none;
     font-weight: 600;
     padding: 8px 12px;
@@ -128,7 +134,8 @@ nav {
 
 .nav-links a:hover {
     color: #0f172a;
-    background: rgba(0, 0, 0, 0.04)
+    background: rgba(253, 247, 247, 0.04);
+    background: rgb(201, 237, 201);
 }
 
 .cta {
