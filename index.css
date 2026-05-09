@@ -31,10 +31,11 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     line-height: 1.45;
-    padding-bottom: 60px;
+    /* padding-bottom: 60px; */
     font-family: var(--font-body);
     font-weight: 400;
     line-height: 1.45;
+    overflow-x: hidden;
 }
 
 /* Headings */
@@ -224,7 +225,7 @@ main {
     display: grid;
     grid-template-columns: 1fr 420px;
     gap: 28px;
-    align-items: center
+    align-items: center;
 }
 
 .hero-card {
@@ -244,7 +245,7 @@ main {
 
 h1 {
     font-size: clamp(28px, 4vw, 44px);
-    margin: 8px 0 12px
+    /* margin: 8px 0 12px */
 }
 
 p.lead {
@@ -723,11 +724,31 @@ p.lead {
 }
 
 /* Portfolio */
+#portfolio {
+    /* background: linear-gradient(90deg, var(--accent), #59e14f); */
+    position: relative;
+    padding: 20px 0;
+}
+
+#portfolio::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    left: 50%;
+    width: 100vw;
+    transform: translateX(-50%);
+    background: rgb(182, 242, 182);
+    z-index: -1;
+}
+
 .portfolio-grid {
     margin-top: 18px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 12px
+    gap: 12px;
+    /* background: linear-gradient(90deg, var(--accent), #59e14f); */
+    position: relative;
+    padding: 20px 0;
 }
 
 .project {
@@ -1034,7 +1055,28 @@ p.lead {
     display: grid;
     grid-template-columns: 1fr 360px;
     gap: 18px;
-    margin-top: 24px
+    margin-top: 24px;
+}
+
+.bottom {
+    margin-top: 30px;
+    position: relative;
+    padding: 20px 0;
+}
+
+.bottom::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    left: 50%;
+    width: 100vw;
+    transform: translateX(-50%);
+    background: linear-gradient(90deg, var(--accent), #0d3d09);
+    z-index: -1;
+}
+
+#contact-title {
+    color: white;
 }
 
 /* ===== contact overflow fixes =====
@@ -1186,7 +1228,9 @@ p.lead {
 footer {
     text-align: center;
     margin-top: 36px;
-    color: var(--muted);
+    margin-bottom: 36px;
+    /* color: var(--muted); */
+    color: white;
     font-size: 14px
 }
 
