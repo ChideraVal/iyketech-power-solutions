@@ -1071,7 +1071,7 @@ p.lead {
     left: 50%;
     width: 100vw;
     transform: translateX(-50%);
-    background: linear-gradient(90deg, var(--accent), #0d3d09);
+    background: #0d3d09;
     z-index: -1;
 }
 
