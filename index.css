@@ -1514,9 +1514,9 @@ footer {
 /* Products section */
 
 .about-products {
-    padding: 38px;
+    /* padding: 38px; */
     border-radius: 16px;
-    background: #f6f8fc;
+    /* background: #faf8f8; */
 }
 
 /* Location */
